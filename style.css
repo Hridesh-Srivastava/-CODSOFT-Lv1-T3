@@ -21,10 +21,29 @@ button#clear, button#backS {
     border: 2px solid rgb(255, 3, 7) !important;
 }
 
-.clean, .backSpace, .equalTo, .newSymbol {
+/* .clean, .backSpace, .equalTo, .newSymbol {
     opacity: .6;
-}
-
+} */
+ .numbers{
+    background-color: #3cd5f0;
+    opacity: .5;
+ }
+ .newSymbol{
+    background-color: #3cd5f0;
+    opacity: .5;
+ }
+ .equalTo{
+    background-color: #23a1b7;
+    opacity: .5;
+ }
+ .clean{
+    background-color: rgb(172, 4, 4);
+    opacity: .5;
+ }
+ .backSpace{
+    background-color: rgb(172, 4, 4);
+    opacity: .5;
+ }
 table {
     background: rgb(1, 1, 1);
     padding: 7px 5px;
