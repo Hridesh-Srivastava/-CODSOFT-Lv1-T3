@@ -90,3 +90,49 @@ function equal() {
 function toRadians(degrees) {
     return degrees * (Math.PI / 180);
 }
+
+//equal to
+document.getElementById("equaling").addEventListener('click',()=>{
+    document.getElementById("equaling").classList.add("equalTo");
+
+setTimeout(()=>{
+    document.getElementById("equaling").classList.remove("equalTo");
+},100);
+});
+
+//nums
+document.querySelectorAll(".num").forEach((button) => { //select kr lega saari num ki classes isliye for sabke liye All kia
+    button.addEventListener('click', () => { //forEach() lagaya taki har ek selected class btn pe lage
+        button.classList.add("numbers");
+        setTimeout(() => {
+            button.classList.remove("numbers");
+        }, 100);
+    });
+});
+
+//symbols
+document.querySelectorAll(".symbols").forEach((button)=>{
+    button.addEventListener('click',()=>{
+        button.classList.add('newSymbol');
+        setTimeout(()=>{
+            button.classList.remove('newSymbol');
+        },100);
+    });
+});
+
+
+//backspace
+document.getElementById("clear").addEventListener('click',()=>{
+    document.getElementById("clear").classList.add("clean");
+    setTimeout(()=>{
+        document.getElementById("clear").classList.remove("clean");
+    },100);
+});
+
+//clear
+document.getElementById("backS").addEventListener('click',()=>{
+    document.getElementById("backS").classList.add("backSpace");
+    setTimeout(()=>{
+        document.getElementById("backS").classList.remove("backSpace");
+    },100);
+});
